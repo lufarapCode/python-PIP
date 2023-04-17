@@ -13,7 +13,7 @@ def run():
   df = pd.read_csv('data.csv')
   print(df)
   #df = df[df['Continent'] == 'Africa']
-  df = df[df['Continent'] == 'Oceania']
+  df = df[df['Continent'] == 'Asia']
 
   countries = df['Country'].values
   percentages = df['World Population Percentage'].values
