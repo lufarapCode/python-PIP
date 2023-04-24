@@ -1,8 +1,10 @@
 services:
-  app-csv:
+  web-server:
     build:
       context: .
       dockerfile: Dockerfile
     # esta linea enlaza el codigo con el que estamos trabajando
     volumes:
-      - .:/app
+      - .:/app-webService
+    ports:
+      - '80:80'
